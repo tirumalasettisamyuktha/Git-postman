@@ -1,0 +1,1446 @@
+{
+	"info": {
+		"_postman_id": "9f806701-dc88-439f-8971-ca2ef87c591d",
+		"name": "JCAApis",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "22212995"
+	},
+	"item": [
+		{
+			"name": "SITJCAAPIs",
+			"item": [
+				{
+					"name": "V2JCA",
+					"item": [
+						{
+							"name": "v2/gettoken",
+							"request": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "Content-Type",
+										"name": "Content-Type",
+										"value": "application/json",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n\t\"username\":\"ranjit@assettl.com\",\r\n\t\"password\":\"Rjil@123456\",\r\n\t\"enterpriseid\":\"198567\"\r\n}\r\n",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "https://sit.jiohumsafar.jio.com/jhsthirdpartyapi/api/jioAutoConnected/v2/gettoken",
+									"protocol": "https",
+									"host": [
+										"sit",
+										"jiohumsafar",
+										"jio",
+										"com"
+									],
+									"path": [
+										"jhsthirdpartyapi",
+										"api",
+										"jioAutoConnected",
+										"v2",
+										"gettoken"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "v2/attributes",
+							"request": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "Authorization",
+										"type": "text",
+										"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpYXQiOjE2ODExMDA1MTgsImV4cCI6MTY4MTEyOTMxOH0.osqkueS5643MDoFdkzGQZFW64F0elQkvt98HQrB8DhA"
+									},
+									{
+										"key": "tokenuserid",
+										"type": "text",
+										"value": "0a9c32d0-32d4-11eb-89fb-001dd8b7005d"
+									},
+									{
+										"key": "Content-Type",
+										"type": "text",
+										"value": "application/json"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n\"rto_number\": \"MH05ER0710\",\r\n\"attributes\": [\"distance_travelled\"],\r\n\"endtime\": 1665742800000,\r\n\"starttime\": 1659349200000,\r\n\"offset\": 0,\r\n\"limit\": 5,\r\n\"enterpriseid\":\"198567\"\r\n}\r\n",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "https://sit.jiohumsafar.jio.com/jhsthirdpartyapi/api/jioAutoConnected/vehicle/v2/attributes",
+									"protocol": "https",
+									"host": [
+										"sit",
+										"jiohumsafar",
+										"jio",
+										"com"
+									],
+									"path": [
+										"jhsthirdpartyapi",
+										"api",
+										"jioAutoConnected",
+										"vehicle",
+										"v2",
+										"attributes"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "v2/motionstatus",
+							"request": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "Content-Type",
+										"value": "application/json",
+										"type": "text"
+									},
+									{
+										"key": "Authorization",
+										"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpYXQiOjE2ODExMDA1MTgsImV4cCI6MTY4MTEyOTMxOH0.osqkueS5643MDoFdkzGQZFW64F0elQkvt98HQrB8DhA",
+										"type": "text"
+									},
+									{
+										"key": "tokenuserid",
+										"value": "0a9c32d0-32d4-11eb-89fb-001dd8b7005d",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n\"rto_number\": \"MH05ER0710\",\r\n\"enterpriseid\":\"198567\"\r\n}\r\n",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "https://sit.jiohumsafar.jio.com/jhsthirdpartyapi/api/jioAutoConnected/vehicle/v2/motionstatus",
+									"protocol": "https",
+									"host": [
+										"sit",
+										"jiohumsafar",
+										"jio",
+										"com"
+									],
+									"path": [
+										"jhsthirdpartyapi",
+										"api",
+										"jioAutoConnected",
+										"vehicle",
+										"v2",
+										"motionstatus"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "v2/trips",
+							"request": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "Content-Type",
+										"value": "application/json",
+										"type": "text"
+									},
+									{
+										"key": "Authorization",
+										"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpYXQiOjE2ODExMDA1MTgsImV4cCI6MTY4MTEyOTMxOH0.osqkueS5643MDoFdkzGQZFW64F0elQkvt98HQrB8DhA",
+										"type": "text"
+									},
+									{
+										"key": "tokenuserid",
+										"value": "0a9c32d0-32d4-11eb-89fb-001dd8b7005d",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n\"rto_number\": \"MH05ER0710\",\r\n\"tripStatus\": \"All\",\r\n\"endtime\": 1664513709,\r\n\"limit\": 5,\r\n\"enterpriseid\":\"198567\"\r\n}\r\n",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "https://sit.jiohumsafar.jio.com/jhsthirdpartyapi/api/jioAutoConnected/vehicle/v2/trips",
+									"protocol": "https",
+									"host": [
+										"sit",
+										"jiohumsafar",
+										"jio",
+										"com"
+									],
+									"path": [
+										"jhsthirdpartyapi",
+										"api",
+										"jioAutoConnected",
+										"vehicle",
+										"v2",
+										"trips"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "v2/alerts",
+							"request": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "Authorization",
+										"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpYXQiOjE2ODExMDA1MTgsImV4cCI6MTY4MTEyOTMxOH0.osqkueS5643MDoFdkzGQZFW64F0elQkvt98HQrB8DhA",
+										"type": "text"
+									},
+									{
+										"key": "tokenuserid",
+										"value": "0a9c32d0-32d4-11eb-89fb-001dd8b7005d",
+										"type": "text"
+									},
+									{
+										"key": "Content-Type",
+										"value": "application/json",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n\"rto_number\": \"MH05ER0710\",\r\n\"alerttypes\": [\"PANIC_BUTTON_PRESS\",\"OVERSPEEDING\"],\r\n\"endtime\": 1664513709,\r\n\"starttime\": 1662008109,\r\n\"offset\": 0,\r\n\"limit\": 5,\r\n\"enterpriseid\":\"198567\"\r\n}\r\n",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "https://sit.jiohumsafar.jio.com/jhsthirdpartyapi/api/jioAutoConnected/vehicle/v2/alerts",
+									"protocol": "https",
+									"host": [
+										"sit",
+										"jiohumsafar",
+										"jio",
+										"com"
+									],
+									"path": [
+										"jhsthirdpartyapi",
+										"api",
+										"jioAutoConnected",
+										"vehicle",
+										"v2",
+										"alerts"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "v2/cargoTrip",
+							"request": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "Content-Type",
+										"value": "application/json",
+										"type": "text"
+									},
+									{
+										"key": "Authorization",
+										"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpYXQiOjE2ODExMDA1MTgsImV4cCI6MTY4MTEyOTMxOH0.osqkueS5643MDoFdkzGQZFW64F0elQkvt98HQrB8DhA",
+										"type": "text"
+									},
+									{
+										"key": "tokenuserid",
+										"value": "0a9c32d0-32d4-11eb-89fb-001dd8b7005d",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n  \t\"userid\":\"ranjit@assettl.com\",\r\n   \t\"vehicleNumbers\":[\"TS11EF3393\"],\r\n   \t\"fromDate\":\"2022-9-01 00:00:00 AM\",\r\n   \t\"toDate\":\"2023-01-05 11:59:59 PM\"\r\n}\r\n",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "https://sit.jiohumsafar.jio.com/jhsthirdpartyapi/api/jioAutoConnected/v2/cargoTrip",
+									"protocol": "https",
+									"host": [
+										"sit",
+										"jiohumsafar",
+										"jio",
+										"com"
+									],
+									"path": [
+										"jhsthirdpartyapi",
+										"api",
+										"jioAutoConnected",
+										"v2",
+										"cargoTrip"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "v2/cargoTripDetails",
+							"request": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "Content-Type",
+										"name": "Content-Type",
+										"value": "application/json",
+										"type": "text"
+									},
+									{
+										"key": "Authorization",
+										"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpYXQiOjE2ODExMDA1MTgsImV4cCI6MTY4MTEyOTMxOH0.osqkueS5643MDoFdkzGQZFW64F0elQkvt98HQrB8DhA",
+										"type": "text"
+									},
+									{
+										"key": "tokenuserid",
+										"value": "0a9c32d0-32d4-11eb-89fb-001dd8b7005d",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n  \t\"tripid\":\"20230102113225968\",\r\n    \"referenceid\":\"\"\r\n}\r\n",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "https://sit.jiohumsafar.jio.com/jhsthirdpartyapi/api/jioAutoConnected/v2/cargoTripDetails",
+									"protocol": "https",
+									"host": [
+										"sit",
+										"jiohumsafar",
+										"jio",
+										"com"
+									],
+									"path": [
+										"jhsthirdpartyapi",
+										"api",
+										"jioAutoConnected",
+										"v2",
+										"cargoTripDetails"
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				},
+				{
+					"name": "V1JCA",
+					"item": [
+						{
+							"name": "V1Gettoken",
+							"request": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "Content-Type",
+										"name": "Content-Type",
+										"value": "application/json",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n   \"username\": \"ranjit@assettl.com\",\r\n   \"password\": \"Rjil@123456\"\r\n}\r\n"
+								},
+								"url": {
+									"raw": "https://sit.jiohumsafar.jio.com/jhsthirdpartyapi/api/jioAutoConnected/v1/gettoken",
+									"protocol": "https",
+									"host": [
+										"sit",
+										"jiohumsafar",
+										"jio",
+										"com"
+									],
+									"path": [
+										"jhsthirdpartyapi",
+										"api",
+										"jioAutoConnected",
+										"v1",
+										"gettoken"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "v1/attributes",
+							"request": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "Content-Type",
+										"name": "Content-Type",
+										"value": "application/json",
+										"type": "text"
+									},
+									{
+										"key": "Authorization",
+										"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpYXQiOjE2ODA4NDYyOTQsImV4cCI6MTY4MDg3NTA5NH0.CkIYsWkV2nrH42hC4X6018xwUT5yfYqEqnu2VSrFOPg",
+										"type": "text"
+									},
+									{
+										"key": "tokenuserid",
+										"value": "0a9c32d0-32d4-11eb-89fb-001dd8b7005d",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n   \"rto_number\":\"KA51HM1236\",\r\n   \"attributes\":[\"distance_travelled\"],\r\n   \"endtime\":1665742800000,\r\n   \"starttime\":1659349200000,\r\n   \"offset\":0,\r\n   \"limit\":5\r\n}\r\n",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "https://sit.jiohumsafar.jio.com/jhsthirdpartyapi/api/jioAutoConnected/vehicle/v1/attributes",
+									"protocol": "https",
+									"host": [
+										"sit",
+										"jiohumsafar",
+										"jio",
+										"com"
+									],
+									"path": [
+										"jhsthirdpartyapi",
+										"api",
+										"jioAutoConnected",
+										"vehicle",
+										"v1",
+										"attributes"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "v1/motionstatus",
+							"request": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "Authorization",
+										"type": "text",
+										"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpYXQiOjE2ODA4NDYyOTQsImV4cCI6MTY4MDg3NTA5NH0.CkIYsWkV2nrH42hC4X6018xwUT5yfYqEqnu2VSrFOPg"
+									},
+									{
+										"key": "tokenuserid",
+										"value": "0a9c32d0-32d4-11eb-89fb-001dd8b7005d",
+										"type": "text"
+									},
+									{
+										"key": "Content-Type",
+										"name": "Content-Type",
+										"value": "application/json",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n\"rto_number\": \"KA51HM1236\",\r\n\"attributes\": [\"distance_travelled\"],\r\n\"endtime\": 1665742800000\r\n}\r\n",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "https://sit.jiohumsafar.jio.com/jhsthirdpartyapi/api/jioAutoConnected/vehicle/v1/motionstatus",
+									"protocol": "https",
+									"host": [
+										"sit",
+										"jiohumsafar",
+										"jio",
+										"com"
+									],
+									"path": [
+										"jhsthirdpartyapi",
+										"api",
+										"jioAutoConnected",
+										"vehicle",
+										"v1",
+										"motionstatus"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "v1/trips",
+							"request": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "Authorization",
+										"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpYXQiOjE2ODA4NDYyOTQsImV4cCI6MTY4MDg3NTA5NH0.CkIYsWkV2nrH42hC4X6018xwUT5yfYqEqnu2VSrFOPg",
+										"type": "text"
+									},
+									{
+										"key": "tokenuserid",
+										"value": "0a9c32d0-32d4-11eb-89fb-001dd8b7005d",
+										"type": "text"
+									},
+									{
+										"key": "Content-Type",
+										"value": "application/json",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n\"rto_number\": \"KA51HM1236\",\r\n\"tripStatus\": \"All\",\r\n\"endtime\": 1664513709,\r\n\"limit\": 5\r\n}\r\n",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "https://sit.jiohumsafar.jio.com/jhsthirdpartyapi/api/jioAutoConnected/vehicle/v1/trips",
+									"protocol": "https",
+									"host": [
+										"sit",
+										"jiohumsafar",
+										"jio",
+										"com"
+									],
+									"path": [
+										"jhsthirdpartyapi",
+										"api",
+										"jioAutoConnected",
+										"vehicle",
+										"v1",
+										"trips"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "v1/alerts",
+							"request": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "Authorization",
+										"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpYXQiOjE2ODA4NDYyOTQsImV4cCI6MTY4MDg3NTA5NH0.CkIYsWkV2nrH42hC4X6018xwUT5yfYqEqnu2VSrFOPg",
+										"type": "text"
+									},
+									{
+										"key": "tokenuserid",
+										"value": "0a9c32d0-32d4-11eb-89fb-001dd8b7005d",
+										"type": "text"
+									},
+									{
+										"key": "Content-Type",
+										"value": "application/json",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n\"rto_number\": \"KA51HM1236\",\r\n\"alerttypes\": [\"PANIC_BUTTON_PRESS\",\"OVERSPEEDING\"],\r\n\"endtime\": 1664513709,\r\n\"starttime\": 1662008109,\r\n\"offset\": 0,\r\n\"limit\": 5\r\n}\r\n",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "https://sit.jiohumsafar.jio.com/jhsthirdpartyapi/api/jioAutoConnected/vehicle/v1/alerts",
+									"protocol": "https",
+									"host": [
+										"sit",
+										"jiohumsafar",
+										"jio",
+										"com"
+									],
+									"path": [
+										"jhsthirdpartyapi",
+										"api",
+										"jioAutoConnected",
+										"vehicle",
+										"v1",
+										"alerts"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "v1/cargoTrip",
+							"request": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "Content-Type",
+										"name": "Content-Type",
+										"value": "application/json",
+										"type": "text"
+									},
+									{
+										"key": "Authorization",
+										"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpYXQiOjE2ODA4NDYyOTQsImV4cCI6MTY4MDg3NTA5NH0.CkIYsWkV2nrH42hC4X6018xwUT5yfYqEqnu2VSrFOPg",
+										"type": "text"
+									},
+									{
+										"key": "tokenuserid",
+										"value": "0a9c32d0-32d4-11eb-89fb-001dd8b7005d",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n  \t\"userid\":\"ranjit@assettl.com\",\r\n   \t\"vehicleNumbers\":[\"TS11EF3393\"],\r\n   \t\"fromDate\":\"2022-9-01 00:00:00 AM\",\r\n   \t\"toDate\":\"2023-01-05 11:59:59 PM\"\r\n}\r\n",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "https://sit.jiohumsafar.jio.com/jhsthirdpartyapi/api/jioAutoConnected/v1/cargoTrip",
+									"protocol": "https",
+									"host": [
+										"sit",
+										"jiohumsafar",
+										"jio",
+										"com"
+									],
+									"path": [
+										"jhsthirdpartyapi",
+										"api",
+										"jioAutoConnected",
+										"v1",
+										"cargoTrip"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "v1/cargoTripDetails",
+							"request": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "Content-Type",
+										"name": "Content-Type",
+										"value": "application/json",
+										"type": "text"
+									},
+									{
+										"key": "Authorization",
+										"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpYXQiOjE2ODA4NDYyOTQsImV4cCI6MTY4MDg3NTA5NH0.CkIYsWkV2nrH42hC4X6018xwUT5yfYqEqnu2VSrFOPg",
+										"type": "text"
+									},
+									{
+										"key": "tokenuserid",
+										"value": "0a9c32d0-32d4-11eb-89fb-001dd8b7005d",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n  \t\"tripid\":\"20230102113225968\",\r\n    \"referenceid\":\"\"\r\n}\r\n",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "https://sit.jiohumsafar.jio.com/jhsthirdpartyapi/api/jioAutoConnected/v1/cargoTripDetails",
+									"protocol": "https",
+									"host": [
+										"sit",
+										"jiohumsafar",
+										"jio",
+										"com"
+									],
+									"path": [
+										"jhsthirdpartyapi",
+										"api",
+										"jioAutoConnected",
+										"v1",
+										"cargoTripDetails"
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				}
+			]
+		},
+		{
+			"name": "ProdJCAAPIs",
+			"item": [
+				{
+					"name": "V1GetToken",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n   \"username\": \"padmasri@assettl.com\",\r\n   \"password\": \"Rjil@12345\"\r\n}\r\n"
+						},
+						"url": {
+							"raw": "https://jiohumsafar.jio.com/jhsthirdpartyapi/api/jioAutoConnected/v1/gettoken",
+							"protocol": "https",
+							"host": [
+								"jiohumsafar",
+								"jio",
+								"com"
+							],
+							"path": [
+								"jhsthirdpartyapi",
+								"api",
+								"jioAutoConnected",
+								"v1",
+								"gettoken"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "V1Attributes",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Authorization",
+								"type": "text",
+								"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpYXQiOjE2ODA2ODg5OTIsImV4cCI6MTY4MDcxNzc5Mn0.BoTg6lKkgyf_BahgZsYtRbbv9qE1tKaXReZGPmST51s"
+							},
+							{
+								"key": "Content-Type",
+								"type": "text",
+								"value": "application/json"
+							},
+							{
+								"key": "tokenuserid",
+								"type": "text",
+								"value": "f03fd164-9131-11eb-a60c-0259dcfef99f"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n   \"rto_number\":\"MH43BP4287\",\r\n   \"attributes\":[\"distance_travelled\"],\r\n   \"endtime\":1665742800000,\r\n   \"starttime\":1659349200000,\r\n   \"offset\":0,\r\n   \"limit\":5\r\n}\r\n"
+						},
+						"url": {
+							"raw": "https://jiohumsafar.jio.com/jhsthirdpartyapi/api/jioAutoConnected/vehicle/v1/attributes",
+							"protocol": "https",
+							"host": [
+								"jiohumsafar",
+								"jio",
+								"com"
+							],
+							"path": [
+								"jhsthirdpartyapi",
+								"api",
+								"jioAutoConnected",
+								"vehicle",
+								"v1",
+								"attributes"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "V1Motionstatus",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "Authorization",
+								"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpYXQiOjE2ODA2ODg5OTIsImV4cCI6MTY4MDcxNzc5Mn0.BoTg6lKkgyf_BahgZsYtRbbv9qE1tKaXReZGPmST51s",
+								"type": "text"
+							},
+							{
+								"key": "tokenuserid",
+								"value": "f03fd164-9131-11eb-a60c-0259dcfef99f",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n   \"rto_number\":\"MH43BP4287\"\r\n}\r\n"
+						},
+						"url": {
+							"raw": "https://jiohumsafar.jio.com/jhsthirdpartyapi/api/jioAutoConnected/vehicle/v1/motionstatus",
+							"protocol": "https",
+							"host": [
+								"jiohumsafar",
+								"jio",
+								"com"
+							],
+							"path": [
+								"jhsthirdpartyapi",
+								"api",
+								"jioAutoConnected",
+								"vehicle",
+								"v1",
+								"motionstatus"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "V1Trips",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "Authorization",
+								"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpYXQiOjE2ODA2ODg5OTIsImV4cCI6MTY4MDcxNzc5Mn0.BoTg6lKkgyf_BahgZsYtRbbv9qE1tKaXReZGPmST51s",
+								"type": "text"
+							},
+							{
+								"key": "tokenuserid",
+								"value": "f03fd164-9131-11eb-a60c-0259dcfef99f",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n   \"rto_number\":\"MH43BP4287\",\r\n   \"tripStatus\":\"All\",\r\n   \"endtime\":1664513709,\r\n   \"limit\":5\r\n}\r\n"
+						},
+						"url": {
+							"raw": "https://jiohumsafar.jio.com/jhsthirdpartyapi/api/jioAutoConnected/vehicle/v1/trips",
+							"protocol": "https",
+							"host": [
+								"jiohumsafar",
+								"jio",
+								"com"
+							],
+							"path": [
+								"jhsthirdpartyapi",
+								"api",
+								"jioAutoConnected",
+								"vehicle",
+								"v1",
+								"trips"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "V1Alerts",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "Authorization",
+								"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpYXQiOjE2ODA2ODg5OTIsImV4cCI6MTY4MDcxNzc5Mn0.BoTg6lKkgyf_BahgZsYtRbbv9qE1tKaXReZGPmST51s",
+								"type": "text"
+							},
+							{
+								"key": "tokenuserid",
+								"value": "f03fd164-9131-11eb-a60c-0259dcfef99f",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n   \"rto_number\":\"MH43BP4287\",\r\n   \"alerttypes\":[\"PANIC_BUTTON_PRESS\",\"OVERSPEEDING\"],\r\n   \"endtime\":1664513709,\r\n   \"starttime\":1662008109,\r\n   \"offset\":0,\r\n   \"limit\":5\r\n}\r\n"
+						},
+						"url": {
+							"raw": "https://jiohumsafar.jio.com/jhsthirdpartyapi/api/jioAutoConnected/vehicle/v1/alerts",
+							"protocol": "https",
+							"host": [
+								"jiohumsafar",
+								"jio",
+								"com"
+							],
+							"path": [
+								"jhsthirdpartyapi",
+								"api",
+								"jioAutoConnected",
+								"vehicle",
+								"v1",
+								"alerts"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "V1CargoTrip",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "Authorization",
+								"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpYXQiOjE2ODA2ODg5OTIsImV4cCI6MTY4MDcxNzc5Mn0.BoTg6lKkgyf_BahgZsYtRbbv9qE1tKaXReZGPmST51s",
+								"type": "text"
+							},
+							{
+								"key": "tokenuserid",
+								"value": "f03fd164-9131-11eb-a60c-0259dcfef99f",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n\t\"userid\":\"padmasri@assettl.com\",\n\t\"vehicleNumbers\":[\"TS11EF3393\"],\n\t\"fromDate\":\"2022-12-10 00:00:00 AM\",\n\t\"toDate\":\"2023-01-31 11:59:59 PM\"\n}"
+						},
+						"url": {
+							"raw": "https://jiohumsafar.jio.com/jhsthirdpartyapi/api/jioAutoConnected/v1/cargoTrip",
+							"protocol": "https",
+							"host": [
+								"jiohumsafar",
+								"jio",
+								"com"
+							],
+							"path": [
+								"jhsthirdpartyapi",
+								"api",
+								"jioAutoConnected",
+								"v1",
+								"cargoTrip"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "V1CargoTripDetails",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "Authorization",
+								"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpYXQiOjE2NzkyOTc5ODMsImV4cCI6MTY3OTMyNjc4M30.FJOxO6-cx0sLj0at0IRFjJeVQ1x2KoyRW3M4QtY2WnY",
+								"type": "text"
+							},
+							{
+								"key": "tokenuserid",
+								"value": "0a9c32d0-32d4-11eb-89fb-001dd8b7005d",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n\t\"tripid\":\"20230127220605779\",\n\t\"referenceid\":\"\"\n}"
+						},
+						"url": {
+							"raw": "https://sit.jiohumsafar.jio.com/jhsthirdpartyapi/api/jioAutoConnected/v1/cargoTripDetails",
+							"protocol": "https",
+							"host": [
+								"sit",
+								"jiohumsafar",
+								"jio",
+								"com"
+							],
+							"path": [
+								"jhsthirdpartyapi",
+								"api",
+								"jioAutoConnected",
+								"v1",
+								"cargoTripDetails"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "V2GetToken",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"pm.environment.set(\"Tokenbrd\", pm.response.json().token)\r",
+									""
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "{{Tokenbrd}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n   \"username\": \"ranjit@assettl.com\",\r\n   \"password\": \"Rjil@123456\",\r\n   \"enterpriseid\":\"198567\"\r\n}\r\n"
+						},
+						"url": {
+							"raw": "https://sit.jiohumsafar.jio.com/jhsthirdpartyapi/api/jioAutoConnected/v2/gettoken",
+							"protocol": "https",
+							"host": [
+								"sit",
+								"jiohumsafar",
+								"jio",
+								"com"
+							],
+							"path": [
+								"jhsthirdpartyapi",
+								"api",
+								"jioAutoConnected",
+								"v2",
+								"gettoken"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "V2Attributes",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Authorization",
+								"type": "text",
+								"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpYXQiOjE2NzkyOTkzMDgsImV4cCI6MTY3OTMyODEwOH0.T_WKOW2g72y1K5L-AALbHgUEFpufGdSRCeNNEBSCI7M"
+							},
+							{
+								"key": "Content-Type",
+								"type": "text",
+								"value": "application/json"
+							},
+							{
+								"key": "tokenuserid",
+								"type": "text",
+								"value": "0a9c32d0-32d4-11eb-89fb-001dd8b7005d"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n   \"rto_number\":\"KA51HM1236\",\r\n   \"attributes\":[\"distance_travelled\"],\r\n   \"endtime\":1665742800000,\r\n   \"starttime\":1659349200000,\r\n   \"offset\":0,\r\n   \"limit\":5,\r\n   \"enterpriseid\":\"198567\"\r\n}\r\n"
+						},
+						"url": {
+							"raw": "https://sit.jiohumsafar.jio.com/jhsthirdpartyapi/api/jioAutoConnected/vehicle/v2/attributes",
+							"protocol": "https",
+							"host": [
+								"sit",
+								"jiohumsafar",
+								"jio",
+								"com"
+							],
+							"path": [
+								"jhsthirdpartyapi",
+								"api",
+								"jioAutoConnected",
+								"vehicle",
+								"v2",
+								"attributes"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "V2Motionstatus",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"type": "text",
+								"value": "application/json"
+							},
+							{
+								"key": "Authorization",
+								"type": "text",
+								"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpYXQiOjE2NzkyOTkzMDgsImV4cCI6MTY3OTMyODEwOH0.T_WKOW2g72y1K5L-AALbHgUEFpufGdSRCeNNEBSCI7M"
+							},
+							{
+								"key": "tokenuserid",
+								"type": "text",
+								"value": "0a9c32d0-32d4-11eb-89fb-001dd8b7005d"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n   \"rto_number\":\"KA51HM1236\",\r\n   \"enterpriseid\":\"198567\"\r\n}\r\n"
+						},
+						"url": {
+							"raw": "https://sit.jiohumsafar.jio.com/jhsthirdpartyapi/api/jioAutoConnected/vehicle/v2/motionstatus",
+							"protocol": "https",
+							"host": [
+								"sit",
+								"jiohumsafar",
+								"jio",
+								"com"
+							],
+							"path": [
+								"jhsthirdpartyapi",
+								"api",
+								"jioAutoConnected",
+								"vehicle",
+								"v2",
+								"motionstatus"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "V2Trips",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"type": "text",
+								"value": "application/json"
+							},
+							{
+								"key": "Authorization",
+								"type": "text",
+								"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpYXQiOjE2NzkyOTkzMDgsImV4cCI6MTY3OTMyODEwOH0.T_WKOW2g72y1K5L-AALbHgUEFpufGdSRCeNNEBSCI7M"
+							},
+							{
+								"key": "tokenuserid",
+								"type": "text",
+								"value": "0a9c32d0-32d4-11eb-89fb-001dd8b7005d"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n   \"rto_number\":\"KA51HM1236\",\r\n   \"tripStatus\":\"All\",\r\n   \"endtime\":1664513709,\r\n   \"limit\":5,\r\n   \"enterpriseid\":\"198567\"\r\n}\r\n"
+						},
+						"url": {
+							"raw": "https://sit.jiohumsafar.jio.com/jhsthirdpartyapi/api/jioAutoConnected/vehicle/v2/trips",
+							"protocol": "https",
+							"host": [
+								"sit",
+								"jiohumsafar",
+								"jio",
+								"com"
+							],
+							"path": [
+								"jhsthirdpartyapi",
+								"api",
+								"jioAutoConnected",
+								"vehicle",
+								"v2",
+								"trips"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "V2Alerts",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"type": "text",
+								"value": "application/json"
+							},
+							{
+								"key": "Authorization",
+								"type": "text",
+								"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpYXQiOjE2NzkyOTkzMDgsImV4cCI6MTY3OTMyODEwOH0.T_WKOW2g72y1K5L-AALbHgUEFpufGdSRCeNNEBSCI7M"
+							},
+							{
+								"key": "tokenuserid",
+								"type": "text",
+								"value": "0a9c32d0-32d4-11eb-89fb-001dd8b7005d"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n   \"rto_number\":\"KA51HM1236\",\r\n   \"alerttypes\":[\"PANIC_BUTTON_PRESS\",\"OVERSPEEDING\"],\r\n   \"endtime\":1664513709,\r\n   \"starttime\":1662008109,\r\n   \"offset\":0,\r\n   \"limit\":5,\r\n   \"enterpriseid\":\"198567\"\r\n}\r\n"
+						},
+						"url": {
+							"raw": "https://sit.jiohumsafar.jio.com/jhsthirdpartyapi/api/jioAutoConnected/vehicle/v2/alerts",
+							"protocol": "https",
+							"host": [
+								"sit",
+								"jiohumsafar",
+								"jio",
+								"com"
+							],
+							"path": [
+								"jhsthirdpartyapi",
+								"api",
+								"jioAutoConnected",
+								"vehicle",
+								"v2",
+								"alerts"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "V2CargoTrip",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"type": "text",
+								"value": "application/json"
+							},
+							{
+								"key": "Authorization",
+								"type": "text",
+								"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpYXQiOjE2NzkyOTkzMDgsImV4cCI6MTY3OTMyODEwOH0.T_WKOW2g72y1K5L-AALbHgUEFpufGdSRCeNNEBSCI7M"
+							},
+							{
+								"key": "tokenuserid",
+								"type": "text",
+								"value": "0a9c32d0-32d4-11eb-89fb-001dd8b7005d"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n\t\"userid\":\"ranjit@assettl.com\",\n\t\"vehicleNumbers\":[\"TS11EF3393\"],\n\t\"fromDate\":\"2022-12-10 00:00:00 AM\",\n\t\"toDate\":\"2023-01-31 11:59:59 PM\"\n}"
+						},
+						"url": {
+							"raw": "https://sit.jiohumsafar.jio.com/jhsthirdpartyapi/api/jioAutoConnected/v2/cargoTrip",
+							"protocol": "https",
+							"host": [
+								"sit",
+								"jiohumsafar",
+								"jio",
+								"com"
+							],
+							"path": [
+								"jhsthirdpartyapi",
+								"api",
+								"jioAutoConnected",
+								"v2",
+								"cargoTrip"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "V2CargoTripDetails",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "Authorization",
+								"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpYXQiOjE2NzkyOTkzMDgsImV4cCI6MTY3OTMyODEwOH0.T_WKOW2g72y1K5L-AALbHgUEFpufGdSRCeNNEBSCI7M",
+								"type": "text"
+							},
+							{
+								"key": "tokenuserid",
+								"value": "0a9c32d0-32d4-11eb-89fb-001dd8b7005d",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n\t\"tripid\":\"20230127101639676\",\n\t\"referenceid\":\"\"\n}"
+						},
+						"url": {
+							"raw": "https://sit.jiohumsafar.jio.com/jhsthirdpartyapi/api/jioAutoConnected/v2/cargoTripDetails",
+							"protocol": "https",
+							"host": [
+								"sit",
+								"jiohumsafar",
+								"jio",
+								"com"
+							],
+							"path": [
+								"jhsthirdpartyapi",
+								"api",
+								"jioAutoConnected",
+								"v2",
+								"cargoTripDetails"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "V2SendConsent",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpYXQiOjE2NzkyOTkzMDgsImV4cCI6MTY3OTMyODEwOH0.T_WKOW2g72y1K5L-AALbHgUEFpufGdSRCeNNEBSCI7M",
+								"type": "text"
+							},
+							{
+								"key": "tokenuserid",
+								"value": "0a9c32d0-32d4-11eb-89fb-001dd8b7005d",
+								"type": "text"
+							},
+							{
+								"key": "Content-Type",
+								"name": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n\t\"drivername\":\"Girish\",\n\t\"drivermobile\":\"9878681212\"\n}"
+						},
+						"url": {
+							"raw": "https://sit.jiohumsafar.jio.com/jhsthirdpartyapi/api/jioAutoConnected/v2/SendConsentForSIM",
+							"protocol": "https",
+							"host": [
+								"sit",
+								"jiohumsafar",
+								"jio",
+								"com"
+							],
+							"path": [
+								"jhsthirdpartyapi",
+								"api",
+								"jioAutoConnected",
+								"v2",
+								"SendConsentForSIM"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "V2GetConsetForSIM",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpYXQiOjE2NzkyOTkzMDgsImV4cCI6MTY3OTMyODEwOH0.T_WKOW2g72y1K5L-AALbHgUEFpufGdSRCeNNEBSCI7M",
+								"type": "text"
+							},
+							{
+								"key": "tokenuserid",
+								"value": "0a9c32d0-32d4-11eb-89fb-001dd8b7005d",
+								"type": "text"
+							},
+							{
+								"key": "Content-Type",
+								"name": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n\t\"mobileno\":[\"9878681212\"]\n}"
+						},
+						"url": {
+							"raw": "https://sit.jiohumsafar.jio.com/jhsthirdpartyapi/api/jioAutoConnected/v2/GetConsentForSIM",
+							"protocol": "https",
+							"host": [
+								"sit",
+								"jiohumsafar",
+								"jio",
+								"com"
+							],
+							"path": [
+								"jhsthirdpartyapi",
+								"api",
+								"jioAutoConnected",
+								"v2",
+								"GetConsentForSIM"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		}
+	]
+}
